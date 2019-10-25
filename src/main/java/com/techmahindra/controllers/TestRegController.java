@@ -51,7 +51,7 @@ public class TestRegController extends HttpServlet {
 			trb.setproduct_name(pname);
 			trb.setReg_date(rdate);
 			trb.setTest_date(tdate);
-			trb.setproduct_type(ttype);
+			trb.setproduct_type(ptype);
 			//trb.setTest_hr(thr);
 			//trb.setTest_min(tmin);
 			trb.setAmount(amount);
