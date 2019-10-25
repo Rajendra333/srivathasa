@@ -20,7 +20,7 @@ Connection con = DBUtility.getConnection();
 		int amount=paybean.getAmount();
 		PreparedStatement ps = con.prepareStatement("insert into dc_payment values(?,?,?,?)");
 		ps.setString(1, pname);
-		ps.setInt(2, cidid);
+		ps.setInt(2, cid);
 		ps.setInt(3, pid);
 		ps.setInt(4, amount);
 		int i=ps.executeUpdate();
