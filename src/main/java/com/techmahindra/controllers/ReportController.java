@@ -31,13 +31,13 @@ public class ReportController extends HttpServlet {
 		ResultSet result=null;
 		try
 		{
-			int pid=Integer.parseInt(request.getParameter("patient_id"));
+			int pid=Integer.parseInt(request.getParameter("customer_id"));
 			System.out.println(pid);
-			int tid=Integer.parseInt(request.getParameter("test_id"));
+			int tid=Integer.parseInt(request.getParameter("product_id"));
 		    ReportService rs=ServicesFactory.getReportService();
 		    ReportBean pb=new ReportBean();
-		    pb.setPatient_id(pid);
-		    pb.setTest_id(tid);
+		    pb.setcustomer_id(pid);
+		    pb.setproduct_id(tid);
 			try
 			{
 				result=rs.reportDetails(pb);

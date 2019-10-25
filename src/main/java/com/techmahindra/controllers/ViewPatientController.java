@@ -17,8 +17,8 @@ import com.techmahindra.services.AdminBeanService;
 import com.techmahindra.services.LoginBeanService;
 import com.techmahindra.servicesfactory.ServicesFactory;
 
-@WebServlet("/ViewPatientController")
-public class ViewPatientController extends HttpServlet {
+@WebServlet("/viewcustomerController")
+public class viewcustomerController extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
 	{
@@ -31,7 +31,7 @@ public class ViewPatientController extends HttpServlet {
 		AdminBeanService as=ServicesFactory.getAdminBeanService();
 		try
 		{
-			rs=as.viewPatient();
+			rs=as.viewcustomer();
 		
 		}
 		catch(ClassNotFoundException e)
@@ -45,7 +45,7 @@ public class ViewPatientController extends HttpServlet {
 		}
 		
 		request.setAttribute("ResultSet", rs);
-		RequestDispatcher rd=request.getRequestDispatcher("viewpatient.jsp");
+		RequestDispatcher rd=request.getRequestDispatcher("viewcustomer.jsp");
 		rd.forward(request, response);
 		
 	}

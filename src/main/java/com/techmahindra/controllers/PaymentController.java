@@ -33,13 +33,13 @@ public class PaymentController extends HttpServlet {
 		try
 		{
 			String pname=request.getParameter("username");
-			int pid = Integer.parseInt(request.getParameter("patient_id"));
-			int tid = Integer.parseInt(request.getParameter("test_id"));
+			int pid = Integer.parseInt(request.getParameter("customer_id"));
+			int tid = Integer.parseInt(request.getParameter("product_id"));
 			int amt = Integer.parseInt(request.getParameter("amount"));
 			PaymentBean pb = new PaymentBean();
 			pb.setUsername(pname);
-			pb.setPatient_id(pid);
-			pb.setTest_id(tid);
+			pb.setcustomer_id(pid);
+			pb.setproduct_id(tid);
 			pb.setAmount(amt);
 			PaymentService ps = ServicesFactory.getPaymentService();
 			try {

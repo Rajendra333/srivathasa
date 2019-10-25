@@ -31,9 +31,9 @@ public class TestRegController extends HttpServlet {
 			
 			
 			int tot_amount;
-			int tid=Integer.parseInt(request.getParameter("test_id"));
-			String tname=request.getParameter("test_name");
-			String ttype=request.getParameter("test_type");
+			int tid=Integer.parseInt(request.getParameter("product_id"));
+			String tname=request.getParameter("product_name");
+			String ttype=request.getParameter("product_type");
 			String rdate = request.getParameter("reg_date");
 			String tdate=request.getParameter("test_date");
 			//int thr=Integer.parseInt(request.getParameter("hour"));
@@ -47,11 +47,11 @@ public class TestRegController extends HttpServlet {
 			hs.setAttribute("a",tot_amount);
 			hs.setAttribute("d",tdate);
 			TestRegBean trb= new TestRegBean();
-			trb.setTest_id(tid);
-			trb.setTest_name(tname);
+			trb.setproduct_id(tid);
+			trb.setproduct_name(tname);
 			trb.setReg_date(rdate);
 			trb.setTest_date(tdate);
-			trb.setTest_type(ttype);
+			trb.setproduct_type(ttype);
 			//trb.setTest_hr(thr);
 			//trb.setTest_min(tmin);
 			trb.setAmount(amount);
@@ -71,12 +71,12 @@ public class TestRegController extends HttpServlet {
 		}
 		catch(SQLException e)
 		{
-			RequestDispatcher rd=request.getRequestDispatcher("testregredirect.jsp");
+			RequestDispatcher rd=request.getRequestDispatcher("Productregredirect.jsp.jsp");
 			rd.forward(request, response);
 		}
 		catch(Exception e)
 		{
-			RequestDispatcher rd=request.getRequestDispatcher("testregredirect.jsp");
+			RequestDispatcher rd=request.getRequestDispatcher("Productregredirect.jsp.jsp");
 			rd.forward(request, response);
 		}
 	}
