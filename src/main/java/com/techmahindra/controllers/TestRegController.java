@@ -71,12 +71,12 @@ public class TestRegController extends HttpServlet {
 		}
 		catch(SQLException e)
 		{
-			RequestDispatcher rd=request.getRequestDispatcher("Productregredirect.jsp.jsp");
+			RequestDispatcher rd=request.getRequestDispatcher("Productregredirect.jsp");
 			rd.forward(request, response);
 		}
 		catch(Exception e)
 		{
-			RequestDispatcher rd=request.getRequestDispatcher("Productregredirect.jsp.jsp");
+			RequestDispatcher rd=request.getRequestDispatcher("Productregredirect.jsp");
 			rd.forward(request, response);
 		}
 	}
