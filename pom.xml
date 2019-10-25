@@ -2,10 +2,10 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.techmahindra</groupId>
-  <artifactId>SRIVATHASA PAPER PRODUCTS</artifactId>
+  <artifactId>SRIVATHASAPAPERPRODUCTS</artifactId>
   <packaging>war</packaging>
   <version>1.0.1</version>
-  <name>SRIVATHASA PAPER PRODUCTS Maven Webapp</name>
+  <name>SRIVATHASAPAPERPRODUCTS Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
     <dependency>
@@ -57,7 +57,7 @@
             <artifactId>maven-war-plugin</artifactId>
             <version>2.3</version>
             <configuration>
-             <warName>SRIVATHASA PAPER PRODUCTS</warName>
+             <warName>SRIVATHASAPAPERPRODUCTS</warName>
              <outputDirectory>target</outputDirectory>
             </configuration>
         </plugin>
