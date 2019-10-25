@@ -11,11 +11,11 @@ import com.techmahindra.daointerfaces.AdminDao;
 import com.techmahindra.utils.DBUtility;
 
 public class AdminDaoImplementation implements AdminDao{
-	public ResultSet viewPatient() throws ClassNotFoundException, SQLException{
+	public ResultSet viewcustomer() throws ClassNotFoundException, SQLException{
 		String rs="";
         Connection con = DBUtility.getConnection();
        
-       PreparedStatement psmt = con.prepareStatement("select username,patient_id from dc_registration");
+       PreparedStatement psmt = con.prepareStatement("select username,customer_id from dc_registration");
                 
              ResultSet rs1 = psmt.executeQuery();
       
