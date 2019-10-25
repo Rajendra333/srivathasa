@@ -28,5 +28,3 @@ pipeline {
 
 
 
-
-https://medium.com/@gustavo.guss/jenkins-sending-email-on-post-build-938b236545d2
