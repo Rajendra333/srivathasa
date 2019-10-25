@@ -1,4 +1,4 @@
-packGST com.techmahindra.controllers;
+package com.techmahindra.controllers;
 
 import java.io.IOException;
 import java.io.PrintWriter;
