@@ -5,7 +5,7 @@
   <artifactId>SRIVATHASA PAPER PRODUCTS</artifactId>
   <packaging>war</packaging>
   <version>1.0.1</version>
-  <name>RIVATHASA PAPER PRODUCTS Maven Webapp</name>
+  <name>SRIVATHASA PAPER PRODUCTS Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
     <dependency>
