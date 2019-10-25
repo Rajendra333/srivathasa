@@ -17,8 +17,8 @@ import com.techmahindra.services.AdminBeanService;
 import com.techmahindra.services.LoginBeanService;
 import com.techmahindra.servicesfactory.ServicesFactory;
 
-@WebServlet("/viewPatientController")
-public class viewPatientController extends HttpServlet {
+@WebServlet("/ViewPatientController")
+public class ViewPatientController extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
 	{
@@ -49,7 +49,4 @@ public class viewPatientController extends HttpServlet {
 		rd.forward(request, response);
 		
 	}
-	
-	
-
 }

@@ -33,9 +33,9 @@ public class PatientRegController extends HttpServlet
 			
 			System.out.println("In the controller");
 			
-			int cid = Integer.parseInt(request.getParameter("patient_id"));
+			int cid = Integer.parseInt(request.getParameter("customer_id"));
 					
-			String cname = request.getParameter("patient_name");
+			String cname = request.getParameter("customer_name");
 			String password=request.getParameter("password");
 			int GST = Integer.parseInt(request.getParameter("GST"));
 			String g = request.getParameter("gender");
@@ -46,7 +46,7 @@ public class PatientRegController extends HttpServlet
 			hs.setAttribute("id", cid);
 			hs.setAttribute("n", cname);
 			
-			prb.setPatient_id(cid);
+			prb.setcustomer_id(cid);
 			prb.setUsername(cname);
 			prb.setPassword(password);
 			prb.setGST(GST);

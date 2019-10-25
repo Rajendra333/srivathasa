@@ -47,7 +47,7 @@ public class TestRegController extends HttpServlet {
 			hs.setAttribute("a",tot_amount);
 			hs.setAttribute("d",tdate);
 			TestRegBean trb= new TestRegBean();
-			trb.setproduct_id(pidid);
+			trb.setproduct_id(pid);
 			trb.setproduct_name(pname);
 			trb.setReg_date(rdate);
 			trb.setTest_date(tdate);
