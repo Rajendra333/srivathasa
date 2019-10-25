@@ -15,8 +15,8 @@ public class PaymentDaoImplementation implements PaymentDao {
 Connection con = DBUtility.getConnection();
 		
 		String pname =paybean.getUsername();
-		int pid=paybean.getcustomer_id();
-		int tid=paybean.getproduct_id();
+		int cid=paybean.getcustomer_id();
+		int pid=paybean.getproduct_id();
 		int amount=paybean.getAmount();
 		PreparedStatement ps = con.prepareStatement("insert into dc_payment values(?,?,?,?)");
 		ps.setString(1, pname);
