@@ -17,8 +17,8 @@ import com.techmahindra.services.AdminBeanService;
 import com.techmahindra.services.LoginBeanService;
 import com.techmahindra.servicesfactory.ServicesFactory;
 
-@WebServlet("/viewcustomerController")
-public class viewcustomerController extends HttpServlet {
+@WebServlet("/viewPatientController")
+public class viewPatientController extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
 	{

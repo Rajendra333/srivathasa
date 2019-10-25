@@ -31,9 +31,9 @@ public class TestRegController extends HttpServlet {
 			
 			
 			int tot_amount;
-			int tid=Integer.parseInt(request.getParameter("product_id"));
-			String tname=request.getParameter("product_name");
-			String ttype=request.getParameter("product_type");
+			int pid=Integer.parseInt(request.getParameter("product_id"));
+			String pname=request.getParameter("product_name");
+			String ptype=request.getParameter("product_type");
 			String rdate = request.getParameter("reg_date");
 			String tdate=request.getParameter("test_date");
 			//int thr=Integer.parseInt(request.getParameter("hour"));
@@ -41,14 +41,14 @@ public class TestRegController extends HttpServlet {
 			int amount=Integer.parseInt(request.getParameter("amount"));
 			tot_amount=amount+200;
 			HttpSession hs = request.getSession();
-			hs.setAttribute("ti", tid);
+			hs.setAttribute("pi", pid);
 			//hs.setAttribute("h",thr);
 			//hs.setAttribute("tm", tmin);
 			hs.setAttribute("a",tot_amount);
 			hs.setAttribute("d",tdate);
 			TestRegBean trb= new TestRegBean();
-			trb.setproduct_id(tid);
-			trb.setproduct_name(tname);
+			trb.setproduct_id(pidid);
+			trb.setproduct_name(pname);
 			trb.setReg_date(rdate);
 			trb.setTest_date(tdate);
 			trb.setproduct_type(ttype);
