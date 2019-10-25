@@ -19,8 +19,8 @@ public class TestRegDaoImplementation implements TestRegDao{
 		
 		
 		int tid=testregbean.getTest_id();
-		String testname=testregbean.getTest_name();
-		String testtype=testregbean.getTest_type();
+		String productname=testregbean.getproduct_name();
+		String producttype=testregbean.getproduct_type();
 		String testdate=testregbean.getTest_date();
 		String regdate = testregbean.getReg_date();
 		//int testhr=testregbean.getTest_hr();
@@ -31,10 +31,10 @@ public class TestRegDaoImplementation implements TestRegDao{
 		PreparedStatement st=con1.prepareStatement("insert into dc_test_reg values(?,?,?,?,?,?)");
 		
 		System.out.println("last");
-		st.setInt(1, tid);
+		st.setInt(1, pid);
 			
-		st.setString(2,testname);
-		st.setString(3,testtype);
+		st.setString(2,productname);
+		st.setString(3,producttype);
 		st.setString(4,regdate);
 		st.setString(5,testdate);
 		//st.setInt(6,testhr);
