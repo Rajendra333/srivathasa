@@ -1,4 +1,4 @@
-packGST com.techmahindra.beans;
+package com.techmahindra.beans;
 
 public class PatientRegBean implements java.io.Serializable
 {
